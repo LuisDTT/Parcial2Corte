@@ -1,0 +1,9 @@
+    <div class="card">
+    <img [src]="product.image" class="card-img-top" [alt]="product.title" style="height: 200px; object-fit: contain;">
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.price}}</p>
+        <a [routerLink]="['product', product.id]" class="btn btn-primary me-2">View Details</a>
+        <button (click)="addToCart()" class="btn btn-success">Add to Cart</button>
+    </div>
+    </div>
